@@ -9,7 +9,7 @@
 \usepackage{longtable,tabularx}
 \setlength\LTleft{0pt} 
 
-\title{Preparation of Papers for AIAA Technical Conferences}
+\title{Proposal of Aerodynamic Innovations for an Aviary Optimization of a Short-Haul Single-Aisle Passenger Aircraft}
 
 \author{Cooper T. Cook\footnote{Graduate Student, Department of Mechanical and Aerospace Engineering}}
 \affil{University of California, Davis, California 95616}
@@ -31,7 +31,17 @@ Blended wing body aircraft have been a popular area of study due to their aerody
 
 Instead of conventional design's emperical equation-based aerodynamic analysis methods, I will implement automated analysis in Athena Vortex Lattice (AVL) and FlightStream using my automated mesh generation tool for morphing aircraft analysis. Using data from both of these analyses, I will consider training a multi-fidelity surrogate model for use within the Aviary optimizer to potentially reduce computational time. However, I expect that the number of iterations in the Aviary optimizer will not be enough to justify a surrogate model implementation. Development of this system is critical for MicroRAPTORS's success in meeting the emission reduction requirements of the RFP.
 
+\begin{figure}[hbt!]
+\centering
+\includegraphics[width=1\textwidth]{cooper-gantt-chart.png}
+\caption{Gantt chart timeline for aerodynamic subsystem creation and integration.}
+\label{fig:cooper-gantt-chart}
+\end{figure}
 
+With the goal to create and implement the aerdynamic subsystem by the project's deadline, the timeline is relatively short and strict. So, the only thing that can change is the \emph{extent to which I will implement both blended wing body geometry and morphing camber}. I believe that blended wing body geometry alone is an appropriate goal for the timeline, considering I already have an analysis framework working. Adding a morphing camber feature will be a reach goal that I can consider once I have the initial aerodynamic subsystem working with the blended wing body.
+
+The code for this project will be stored and updated on my GitHub repository at \url{
+https://github.com/coopertomcook/mae298-cook}. The README will be kept current with up-to-date information about the state of the subsystem.
 
 \bibliography{MAE_298}
 
